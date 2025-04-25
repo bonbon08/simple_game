@@ -1,7 +1,7 @@
 import pygame
 from libs import tiles
 
-sheep_tiles = tiles.TileSet("data/images/intro/sheep_spritesheet.png", 16, 16)
+sheep_tiles = tiles.TileSet("data/images/sheep_spritesheet.png", 16, 16)
 
 def show_intro(Screen, Clock):
     temp_sheep_tile_count = -5
