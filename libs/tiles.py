@@ -29,3 +29,9 @@ class TileSet:
         tiles_per_row = self.image.get_width() // self.tile_width
         index = y * tiles_per_row + x
         return self.get_tile(index)
+    
+    def get_tile_scalled(self, index, scale):
+        if index < 0 or index >= len(self.tiles):
+            raise IndexError("Tile index out of range.")
+        return pygame.transform.scale(self.tiles[index], scale)
+

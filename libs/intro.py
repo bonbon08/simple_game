@@ -24,7 +24,7 @@ def show_intro(Screen, Clock):
                 pygame.quit()
         if temp_sheep_tile_count >= 85:
             temp_sheep_tile_count = -5
-        temp_sheep = pygame.transform.scale(sheep_tiles.get_tile(round(temp_sheep_tile_count/10)), (scale_x,scale_y))
+        temp_sheep = sheep_tiles.get_tile_scalled((round(temp_sheep_tile_count/10)), (scale_x,scale_y))
         
         top_text.set_alpha(min(1.0,fade/fade_max)*255)
         bottom_text.set_alpha(min(1.0,fade/fade_max)*255)
