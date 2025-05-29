@@ -14,7 +14,7 @@ def show_menu(Screen, Clock):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run_menu = False
-        Screen.fill("white") # Temp background
+        Screen.fill("Blue") # Temp background
 
         keys = pygame.key.get_pressed()
         match menu_part:
